@@ -9,7 +9,7 @@ public class Num1085 {
         int x= sc.nextInt();
         int y= sc.nextInt();
         int w= sc.nextInt();
-        int h= sc.nextInt();W
+        int h= sc.nextInt();
 
         int a = (w - x < x) ? 0 : 2;
         int b = (h - y < y) ? 2 : 3;
