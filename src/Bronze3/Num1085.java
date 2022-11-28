@@ -1,3 +1,5 @@
+package Bronze3;
+
 import java.util.*;
 
 public class Num1085 {
@@ -7,7 +9,7 @@ public class Num1085 {
         int x= sc.nextInt();
         int y= sc.nextInt();
         int w= sc.nextInt();
-        int h= sc.nextInt();
+        int h= sc.nextInt();W
 
         int a = (w - x < x) ? 0 : 2;
         int b = (h - y < y) ? 2 : 3;
