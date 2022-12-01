@@ -1,4 +1,4 @@
-package Bronze3;
+package bronze3;
 
 import java.util.*;
 
