@@ -8,8 +8,8 @@ public class Num1159 {
 
         int num = sc.nextInt();
         int total = 0;
-        char alp[] = new char[26];
-        int alpcount[] = new int[26];
+        char[] alp = new char[26];
+        int[] alpcount = new int[26];
         String name = new String();
 
         for(int i = 0;i<26;i++)

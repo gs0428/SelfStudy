@@ -5,7 +5,7 @@ import java.util.*;
 public class Num1100 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String board[][] = new String[8][9];
+        String[][] board = new String[8][9];
         int count = 0;
 
         for(int i = 0;i<8;i++){
