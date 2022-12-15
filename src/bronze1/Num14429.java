@@ -11,7 +11,7 @@ public class Num14429 {
 
 
         int number = Integer.parseInt(br.readLine());   // 게임 횟수
-        int len[] = new int[number + 1];    // 길이는 숫자를 개수로 나눈 몫에 1을 더하고 2를 곱한다 (len = ((lose / max) + 1) * 2)
+        int[] len = new int[number + 1];    // 길이는 숫자를 개수로 나눈 몫에 1을 더하고 2를 곱한다 (len = ((lose / max) + 1) * 2)
         int small = 0;                      // small은 가장 짧은 횟수
         int smallNum = 0;                   // 가장 짧은 횟수의 번호
 
@@ -33,8 +33,7 @@ public class Num14429 {
                     if (small > len[i]) {
                         small = len[i];
                         smallNum = i + 1;
-                    } else if (small == len[i])
-                        continue;
+                    }
                 }
             }
         }
