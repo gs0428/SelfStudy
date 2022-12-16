@@ -3,7 +3,7 @@ package bronze1;
 import java.util.*;
 import java.io.*;
 
-public class Num14429 {
+public class Num14429 { // 배스킨라빈스 31
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

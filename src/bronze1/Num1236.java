@@ -2,7 +2,7 @@ package bronze1;
 
 import java.util.*;
 
-public class Num1236 {
+public class Num1236 { // 성 지키기
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

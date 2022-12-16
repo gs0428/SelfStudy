@@ -2,7 +2,7 @@ package bronze2;
 
 import java.util.*;
 
-public class Num1100 {
+public class Num1100 { // 하얀 칸
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[][] board = new String[8][9];

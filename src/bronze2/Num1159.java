@@ -2,7 +2,7 @@ package bronze2;
 
 import java.util.*;
 
-public class Num1159 {
+public class Num1159 { // 농구 경기
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
