@@ -35,7 +35,7 @@ public class Num4344 { // 평균은 넘겠지
         }
 
         for(int i = 0;i<N;i++){
-            System.out.println(String.format("%.3f%%", per[i] * 100));
+            System.out.println(String.format("%.3f%%", per[i] * 100));  // 소수점 3째자리에서 반올림
         }
     }
 }
