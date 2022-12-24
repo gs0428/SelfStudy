@@ -42,10 +42,11 @@ public class Num1769 { // 3의 배수
         else {
             if(count > 0)                                   // 한 자리인 경우를 제외하기 위한 조건문
                 count++;
-            String result = String.valueOf(sum) + String.valueOf(count);    // 리턴을 2개를 못해서 문자열로 합쳐버림. 어차피 두 숫자 모두 자릿수가 1개라 다시 분리하기 쉬움 
+            String result = String.valueOf(sum) + String.valueOf(count);    // 리턴을 2개를 못해서 문자열로 합쳐버림. 어차피 두 숫자 모두 자릿수가 1개라 다시 분리하기 쉬움
             return result;
 
         }
 
     }
 }
+// ss
