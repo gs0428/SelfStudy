@@ -49,5 +49,3 @@ public class Num1769 { // 3의 배수
 
     }
 }
-
-// changes
