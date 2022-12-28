@@ -2,6 +2,7 @@ package bronze3;
 
 import java.util.*;
 import java.io.*;
+
 public class Num2455 { // 지능형 기차
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
