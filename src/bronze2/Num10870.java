@@ -15,6 +15,6 @@ public class Num10870 { // 피보나치 수 5
                 num[i] = i;                             // 0번째와 1번째는 그 순서가 값
         }
 
-        System.out.println(num[n]);                     // n번째 값이 정답
+        System.out.println(num[n+1]);                     // n번째 값이 정답
     }
 }
