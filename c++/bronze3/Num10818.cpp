@@ -8,7 +8,7 @@ int main() {
     for (int i = 0; i < N; i++)
     {
         std::cin >> num[i];
-        
+
         if(i == 0) {
             max = num[i];
             min = num[i];
