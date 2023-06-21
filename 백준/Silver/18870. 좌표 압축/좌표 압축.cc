@@ -12,8 +12,8 @@ int main() {
 
     int N;
     cin >> N;
-    vector<long long> v(N, 0);
-    vector<long long> temp;
+    vector<int> v(N, 0);
+    vector<int> temp;
     for(int i = 0;i<N;i++) {
         cin >> v[i];
         temp.push_back(v[i]);
