@@ -13,46 +13,31 @@ int main() {
 
     int T;
     cin >> T;
+    for(int i = 0;i<T;i++) {
+        long long int a, b;
+        cin >> a >> b;
+        
+        int num = 2;
+        long long int mul = a * b;
+        long long int small = a < b ? a : b;
 
-    for (int i = 0; i < T; i++) {
-        int l, r;
-        cin >> l >> r;
-        if(l == 1) {
-            cout << r << "\n";
-            continue;
-        }
-
-        int mul = l * r;
-        int com = 1;
-        int numL = 2, numR = 2;
-        vector<int> vL(l+1, 0), vR(r+1, 0);
-
-        while(l != 1) {
-            if(l % numL == 0) {
-                vL[numL]++;
-                l /= numL;
+        while(true) {
+            if(a % num == 0 && b % num == 0) {
+                mul /= num;
+                a /= num;
+                b /= num;
             }
             else
-                numL++;
-        }
-        while(r != 1) {
-            if(r % numR == 0) {
-                vR[numR]++;
-                r /= numR;
-            }
-            else
-                numR++;
-        }
-        int area = vL.size() > vR.size() ? vR.size() : vL.size();
-        for(int k = 2;k<area;k++) {
-            if(vL[k] == 0 || vR[k] == 0)
-                continue;
+                num += 1;
 
-            com *= vL[k] > vR[k] ? (int)pow(k, vR[k]) : (int)pow(k, vL[k]);
+            if(num > small)
+                break;
         }
-        cout << mul / com << "\n";
+
+        cout << mul << "\n";
     }
-
+    
+    
 
     return 0;
 }
