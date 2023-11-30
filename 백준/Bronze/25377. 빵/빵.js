@@ -4,7 +4,7 @@ const input = fs.readFileSync(filePath).toString().trim().split("\n");
 let minute = 1001;
 input.slice(1).map((time) => {
     const [A, B] = time.split(' ').map(Number);
-    if(B > A && B < minute) {
+    if(B >= A && B < minute) {
         minute = B;
     }
 })
