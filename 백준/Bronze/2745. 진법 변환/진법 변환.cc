@@ -9,8 +9,6 @@ int main() {
     cin.tie(0);
     cout.tie(0);
 
-    vector<vector<bool>> area(101, vector<bool>(101, false));
-
     string N;
     int B, total = 0;
     cin >> N >> B;
