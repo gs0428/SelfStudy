@@ -1,16 +1,13 @@
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 const input = fs.readFileSync(filePath).toString().trim().split("\n");
-const N = +input[0];
-const [T, P] = input[2].split(" ").map((i) => +i);
-
-let answerT = 0;
-let quotientP = Math.floor(N / P);
-let restP = N % P;
-
-for (num of input[1].split(" ")) {
-  answerT += +num % T === 0 ? Math.floor(+num / T) : Math.floor(+num / T) + 1;
-}
-
-console.log(answerT);
-console.log(quotientP, restP);
+const total = +input[0];
+const sizes = input[1].split(" ").map(Number);
+const [T, P] = input[2].split(" ").map(Number);
+const totalShirts = sizes.reduce((acc, cur) => {
+  return (acc += cur % T === 0 ? cur / T : Math.floor(cur / T) + 1);
+}, 0);
+console.log(totalShirts);
+const share = Math.floor(total / P);
+const rest = total % P;
+console.log(share, rest);
